@@ -8,6 +8,7 @@ import styled from "@emotion/styled";
 interface ButtonProps {
   /** prop1 description */
   text: string
+  onClick?: () => void
 }
 
 const Wrapper = styled.button`
@@ -27,8 +28,8 @@ const Wrapper = styled.button`
  * Form Grid.
  */
 export const Button:React.FunctionComponent<ButtonProps> = (props: ButtonProps) => {
-  const {text} = props
-  return <Wrapper>{text}</Wrapper>
+  const {text, onClick} = props
+  return <Wrapper onClick={onClick}>{text}</Wrapper>
 }
 
 export default Button
