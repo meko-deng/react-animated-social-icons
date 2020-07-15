@@ -1,10 +1,10 @@
 import { render, getByText, fireEvent } from "@testing-library/react";
 import React from "react";
-import Button from "./Button";
+import Icon from "./Icon";
 
-describe("Button", () => {
+describe("Icon", () => {
   test("should display text", () => {
-    const { container } = render(<Button text="We Salute You!" />);
+    const { container } = render(<Icon text="We Salute You!" />);
 
     getByText(container, "We Salute You!");
   })
@@ -12,7 +12,7 @@ describe("Button", () => {
   test("should handle click events", () => {
     const onClickMock = jest.fn();
     const { container } = render(
-      <Button text="Click me, maybe?" onClick={onClickMock} />
+      <Icon text="Click me, maybe?" onClick={onClickMock} />
     );
     const component = container.firstChild;
 
@@ -22,7 +22,7 @@ describe("Button", () => {
     })
 
     test("should make text uppercase", () => {
-        const { container } = render(<Button text="We Salute You!" />);
+        const { container } = render(<Icon text="We Salute You!" />);
         const component = getByText(container, "We Salute You!");
       
         //@ts-ignore

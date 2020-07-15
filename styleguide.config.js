@@ -16,7 +16,7 @@ module.exports = {
       },
       resolve:{
         extensions: [ '.tsx', '.ts', '.js' ],
-      }
+      },
     },
     propsParser: require("react-docgen-typescript").withCustomConfig(
       "./tsconfig.json",
