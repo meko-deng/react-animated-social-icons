@@ -1,1 +1,1 @@
-export {default as Icon} from './components/icon'
+export { default as AnimatedSocialIcon } from "./components/animatedSocialIcon"

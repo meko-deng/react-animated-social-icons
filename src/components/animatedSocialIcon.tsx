@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 
 import { animations } from "../animations"
-import { AnimatedSocialIconProps } from "./icon.props"
+import { AnimatedSocialIconProps } from "./animatedSocialIcon.props"
 
 library.add(fab)
 
@@ -14,15 +14,16 @@ interface AnimatedSocialIconWrapperProps extends Partial<AnimatedSocialIconProps
 const AnimatedSocialIconWrapper = styled.a<AnimatedSocialIconWrapperProps>`
   cursor: pointer;
   svg {
-    font-size: ${props => props.width};
-    color: ${props => props.defaultColor};
+    font-size: ${(props) => props.width};
+    color: ${(props) => props.defaultColor};
     :hover {
-      animation: ${props => props.animation}  ${props => `${props.animationDuration}s`} forwards ease;
-      color: ${props => props.hoverColor};
+      animation: ${(props) => props.animation} ${(props) => `${props.animationDuration}s`} forwards
+        ease;
+      color: ${(props) => props.hoverColor};
     }
   }
 
-  ${props => animations[props.animation]}
+  ${(props) => animations[props.animation]}
 `
 
 /**
@@ -37,7 +38,7 @@ export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps
   animation,
   defaultColor,
   hoverColor,
-  animationDuration=0.5,
+  animationDuration = 0.5,
   ...rest
 }: AnimatedSocialIconProps) => {
   return (
@@ -49,8 +50,7 @@ export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps
       defaultColor={defaultColor}
       hoverColor={hoverColor}
       animationDuration={animationDuration}
-      {...rest}
-    >
+      {...rest}>
       <FontAwesomeIcon icon={["fab", brandName]} />
     </AnimatedSocialIconWrapper>
   )
