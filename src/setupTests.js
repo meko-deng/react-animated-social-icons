@@ -1,2 +1,6 @@
 import { matchers } from "jest-emotion";
-expect.extend(matchers);
+import {
+    toBeInTheDocument,
+    toHaveAttribute
+  } from '@testing-library/jest-dom/matchers'
+expect.extend({matchers, toBeInTheDocument, toHaveAttribute});
