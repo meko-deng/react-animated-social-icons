@@ -5,19 +5,19 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 
 import { animations } from "../animations"
-import { IconProps } from "./icon.props"
+import { AnimatedSocialIconProps } from "./icon.props"
 
 library.add(fab)
 
-interface IconWrapperProps extends Partial<IconProps> {}
+interface AnimatedSocialIconWrapperProps extends Partial<AnimatedSocialIconProps> {}
 
-const IconWrapper = styled.a<IconWrapperProps>`
+const AnimatedSocialIconWrapper = styled.a<AnimatedSocialIconWrapperProps>`
   cursor: pointer;
   svg {
     font-size: ${props => props.width};
     color: ${props => props.defaultColor};
     :hover {
-      animation: ${props => props.animation} 0.5s forwards ease;
+      animation: ${props => props.animation}  ${props => `${props.animationDuration}s`} forwards ease;
       color: ${props => props.hoverColor};
     }
   }
@@ -26,9 +26,10 @@ const IconWrapper = styled.a<IconWrapperProps>`
 `
 
 /**
- * Form Icon.
+ * A minimalistic animation library for social icons from font-awesome 5.
+ * Use this library to redirect users to your social webpages!
  */
-export const Icon: React.FunctionComponent<IconProps> = ({
+export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps> = ({
   brandName,
   url,
   newPage = true,
@@ -36,19 +37,23 @@ export const Icon: React.FunctionComponent<IconProps> = ({
   animation,
   defaultColor,
   hoverColor,
-}: IconProps) => {
+  animationDuration=0.5,
+  ...rest
+}: AnimatedSocialIconProps) => {
   return (
-    <IconWrapper
+    <AnimatedSocialIconWrapper
       href={url}
       target={newPage ? "_blank" : "_self"}
       width={width}
       animation={animation}
       defaultColor={defaultColor}
       hoverColor={hoverColor}
+      animationDuration={animationDuration}
+      {...rest}
     >
       <FontAwesomeIcon icon={["fab", brandName]} />
-    </IconWrapper>
+    </AnimatedSocialIconWrapper>
   )
 }
 
-export default Icon
+export default AnimatedSocialIcon

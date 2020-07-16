@@ -1,104 +1,114 @@
 export const animations = {
-  moveUp: `
-        @-webkit-keyframes moveUp {
-            0% {
-                transform: translate(0);
-            }
-            100% {
-                transform: translate(0, -0.2em);
-            }
-        }
-        @keyframes moveUp {
-            0% {
-                transform: translate(0);
-            }
-            100% {
-                transform: translate(0, -0.2em);
-            }
-        }
+  float: `
+    @-webkit-keyframes float {
+      0% {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+      }
+      100% {
+        transform: translate(0, -0.2em);
+        -webkit-transform: translate(0, -0.2em);
+      }
+    }
+    @keyframes float {
+      0% {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+      }
+      100% {
+        transform: translate(0, -0.2em);
+        -webkit-transform: translate(0, -0.2em);
+      }
+    }
     `,
-  pulseGrow: `
-    @-webkit-keyframes pulseGrow {
+  sink: `
+    @-webkit-keyframes sink {
+      0% {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+      }
+      100% {
+        transform: translate(0, 0.2em);
+        -webkit-transform: translate(0, 0.2em);
+      }
+    }
+    @keyframes sink {
+      0% {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+      }
+      100% {
+        transform: translate(0, 0.2em);
+        -webkit-transform: translate(0, 0.2em);
+      }
+    }
+    `,
+  grow: `
+    @-webkit-keyframes grow {
         to {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
         }
       }
-      @keyframes pulseGrow {
+      @keyframes grow {
         to {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
         }
       }
     `,
-  pulseShrink: `
-      @-webkit-keyframes pulseShrink {
+  shrink: `
+      @-webkit-keyframes shrink {
         to {
           -webkit-transform: scale(0.9);
           transform: scale(0.9);
         }
       }
-      @keyframes pulseShrink {
+      @keyframes shrink {
         to {
           -webkit-transform: scale(0.9);
           transform: scale(0.9);
         }
       }
       `,
-  wobbleVertical: `
-  @-webkit-keyframes wobbleVertical {
-    16.65% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
+  bounce: `
+  @-webkit-keyframes bounce {
+    15% {
+      -webkit-transform: translateY(0.2em);
+      transform: translateY(0.2em);
     }
-    33.3% {
-      -webkit-transform: translateY(-6px);
-      transform: translateY(-6px);
+    40% {
+      -webkit-transform: translateY(-0.1em);
+      transform: translateY(-0.1em);
     }
-    49.95% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    66.6% {
-      -webkit-transform: translateY(-2px);
-      transform: translateY(-2px);
-    }
-    83.25% {
-      -webkit-transform: translateY(1px);
-      transform: translateY(1px);
+    60% {
+      -webkit-transform: translateY(0.05em);
+      transform: translateY(0.05em);
     }
     100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
   }
-  @keyframes wobbleVertical {
-    16.65% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
+  @keyframes bounce {
+    15% {
+      -webkit-transform: translateY(0.2em);
+      transform: translateY(0.2em);
     }
-    33.3% {
-      -webkit-transform: translateY(-6px);
-      transform: translateY(-6px);
+    40% {
+      -webkit-transform: translateY(-0.1em);
+      transform: translateY(-0.1em);
     }
-    49.95% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    66.6% {
-      -webkit-transform: translateY(-2px);
-      transform: translateY(-2px);
-    }
-    83.25% {
-      -webkit-transform: translateY(1px);
-      transform: translateY(1px);
+    60% {
+      -webkit-transform: translateY(0.05em);
+      transform: translateY(0.05em);
     }
     100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
   }
-  `
+  `,
 }
 
 export type AnimationTypes = keyof typeof animations

@@ -1,6 +1,7 @@
 module.exports = {
   ignore: ["src/components/*.props.ts","src/components/*.test.tsx"],
   showSidebar: false,
+  usageMode: "expand",
   webpackConfig: {
     module: {
       rules: [

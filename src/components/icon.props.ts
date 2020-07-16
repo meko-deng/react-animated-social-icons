@@ -4,19 +4,23 @@ import { AnimationTypes } from "../animations"
 /**
  * Icon properties.
  */
-export interface IconProps {
-    /** brand icon to display. List of icons: https://fortawesome.com/sets/font-awesome-5-brands */
+export interface AnimatedSocialIconProps {
+    /** List of icons: https://fortawesome.com/sets/font-awesome-5-brands */
     brandName: IconName
-    /** link */
+    /** url link for redirection */
     url?: string
-    /** open link in a new page. Default = "_self"*/
+    /** When `true`, opens link in a new window*/
     newPage?: boolean
-    /** width of icon. Default = inherit */
+    /** size of icon. By default, inherits the parent font-size */
     width?: string
     /** animations */
     animation?: AnimationTypes
-    /** default = "black" */
+    /** base color */
     defaultColor?: string
-    /** default = "black" */
+    /** color on hover */
     hoverColor?: string
+    /** custom style for icon */
+    style?: React.CSSProperties
+    /** animation duration (in seconds)*/
+    animationDuration?: number
   }
