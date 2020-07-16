@@ -1,5 +1,5 @@
 {
-  "name": "social-media-icons",
+  "name": "react-animated-social-icons",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -19,9 +19,9 @@
     "@emotion/styled": "^10.x",
     "react": "^16.x",
     "react-dom": "^16.x",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11"
   },
   "devDependencies": {
@@ -54,5 +54,10 @@
     "ts-loader": "^8.0.0",
     "typescript": "^3.9.6",
     "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11"
   }
 }

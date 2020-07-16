@@ -28,7 +28,7 @@ export default [
       {
           file: packageJSON.browser,
           format: "umd",
-          name: "socialMediaIconsLibrary",
+          name: "reactAnimatedSocialIcons",
           globals: {
               react: "React",
               "@emotion/styled": "styled",
@@ -66,7 +66,7 @@ export default [
       {
         file: minifyExtension(packageJSON.browser),
         format: "umd",
-        name: "socialMediaIconsLibrary",
+        name: "reactAnimatedSocialIcons",
         globals: {
             react: "React",
             "@emotion/styled": "styled",

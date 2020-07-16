@@ -5,7 +5,7 @@ export const animations = {
                 transform: translate(0);
             }
             100% {
-                transform: translate(0, -5px);
+                transform: translate(0, -0.2em);
             }
         }
         @keyframes moveUp {
@@ -13,7 +13,7 @@ export const animations = {
                 transform: translate(0);
             }
             100% {
-                transform: translate(0, -5px);
+                transform: translate(0, -0.2em);
             }
         }
     `,
