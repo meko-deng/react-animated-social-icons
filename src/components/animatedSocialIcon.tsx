@@ -1,20 +1,16 @@
 import * as React from "react"
 import styled from "@emotion/styled"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-
 import { animations } from "../animations"
 import { AnimatedSocialIconProps } from "./animatedSocialIcon.props"
-
-library.add(fab)
+import { icons } from "../icons"
 
 interface AnimatedSocialIconWrapperProps extends Partial<AnimatedSocialIconProps> {}
 
 const AnimatedSocialIconWrapper = styled.a<AnimatedSocialIconWrapperProps>`
+  width: ${(props) => props.width};
   cursor: pointer;
   svg {
-    font-size: ${(props) => props.width};
+    // font-size: ${(props) => props.width};
     color: ${(props) => props.defaultColor};
     :hover {
       animation: ${(props) => props.animation} ${(props) => `${props.animationDuration}s`} forwards
@@ -34,7 +30,7 @@ export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps
   brandName,
   url,
   newPage = true,
-  width = "inherit",
+  width = "1em",
   animation,
   defaultColor,
   hoverColor,
@@ -51,7 +47,7 @@ export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps
       hoverColor={hoverColor}
       animationDuration={animationDuration}
       {...rest}>
-      <FontAwesomeIcon icon={["fab", brandName]} />
+      {icons[`${brandName}`]}
     </AnimatedSocialIconWrapper>
   )
 }

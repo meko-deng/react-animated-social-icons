@@ -1,12 +1,11 @@
-import { IconName } from "@fortawesome/fontawesome-common-types"
 import { AnimationTypes } from "../animations"
-
+import { IconTypes } from "../icons"
 /**
  * Icon properties.
  */
 export interface AnimatedSocialIconProps {
-  /** List of icons: https://fortawesome.com/sets/font-awesome-5-brands */
-  brandName: IconName
+  /** Icon name */
+  brandName: IconTypes
   /** url link for redirection */
   url?: string
   /** When `true`, opens link in a new window*/

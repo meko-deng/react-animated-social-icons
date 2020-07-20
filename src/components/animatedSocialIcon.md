@@ -15,6 +15,13 @@
         max-width: 600px;
         width: 100%;
     }
+    .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        row-gap: 10px;
+        max-width: 800px;
+        width: 100%;
+    }
     .item-wrapper {
         display: flex;
         flex-direction: column;
@@ -23,17 +30,76 @@
     }
 </style>
 
+#### Icons
+
+```tsx
+import AnimatedSocialIcon from "./animatedSocialIcon";
+
+const Icon = (name) => {
+    return (
+        <div className="item-wrapper">
+            <AnimatedSocialIcon brandName={name} width="2.5em" style={{padding: "1em"}}/>
+        </div>
+    )
+}
+
+<div className="icon-grid">
+    {Icon("angelist")}
+    {Icon("behance")}
+    {Icon("blogger")}
+    {Icon("codepen")}
+    {Icon("deviantart")}
+    {Icon("discord")}
+    {Icon("dribbble")}
+    {Icon("dribbbleAlt")}
+    {Icon("facebook")}
+    {Icon("facebookAlt")}
+    {Icon("github")}
+    {Icon("githubAlt")}
+    {Icon("gofundme")}
+    {Icon("goodreads")}
+    {Icon("googlePlay")}
+    {Icon("instagram")}
+    {Icon("kickstarter")}
+    {Icon("linkedin")}
+    {Icon("medium")}
+    {Icon("mediumAlt")}
+    {Icon("meetup")}
+    {Icon("patreon")}
+    {Icon("pinterest")}
+    {Icon("productHunt")}
+    {Icon("reddit")}
+    {Icon("skillshare")}
+    {Icon("slack")}
+    {Icon("slackAlt")}
+    {Icon("snapchat")}
+    {Icon("soundCloud")}
+    {Icon("spotify")}
+    {Icon("stackOverflow")}
+    {Icon("steam")}
+    {Icon("tumblr")}
+    {Icon("twitch")}
+    {Icon("twitter")}
+    {Icon("twitterAlt")}
+    {Icon("vimeo")}
+    {Icon("weibo")}
+    {Icon("wordpress")}
+    {Icon("yelp")}
+    {Icon("youtube")}
+</div>
+
+```
 #### Default
 
 ```tsx
-import AnimatedSocialIcon from "./icon";
+import AnimatedSocialIcon from "./animatedSocialIcon";
 
 <div style={{display:"flex", flexDirection:"row"}}>
-    <AnimatedSocialIcon brandName="github-alt" style={{padding: "0.5em"}}/>
-    <AnimatedSocialIcon brandName="linkedin-in" style={{padding: "0.5em"}}/>
+    <AnimatedSocialIcon brandName="github" style={{padding: "0.5em"}}/>
+    <AnimatedSocialIcon brandName="linkedin" style={{padding: "0.5em"}}/>
     <AnimatedSocialIcon brandName="instagram" style={{padding: "0.5em"}}/>
-    <AnimatedSocialIcon brandName="dribbble" style={{padding: "0.5em"}}/>
-    <AnimatedSocialIcon brandName="figma" style={{padding: "0.5em"}}/>
+    <AnimatedSocialIcon brandName="dribbbleAlt" style={{padding: "0.5em"}}/>
+    <AnimatedSocialIcon brandName="youtube" style={{padding: "0.5em"}}/>
 </div>
 
 ```
@@ -41,14 +107,14 @@ import AnimatedSocialIcon from "./icon";
 #### Sizes
 
 ```tsx
-import AnimatedSocialIcon from "./icon";
+import AnimatedSocialIcon from "./animatedSocialIcon";
 
 <div style={{display:"flex", flexDirection:"row", alignItems:"flex-end"}}>
-    <AnimatedSocialIcon brandName="github-alt" style={{padding: "1em"}}/>
-    <AnimatedSocialIcon brandName="linkedin-in" width="1.5em" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="github" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="linkedin" width="1.5em" style={{padding: "1em"}}/>
     <AnimatedSocialIcon brandName="instagram" width="2em" style={{padding: "1em"}}/>
-    <AnimatedSocialIcon brandName="dribbble" width="2.5em" style={{padding: "1em"}}/>
-    <AnimatedSocialIcon brandName="figma" width="3em" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="dribbbleAlt" width="2.5em" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="youtube" width="3em" style={{padding: "1em"}}/>
 </div>
 
 ```
@@ -56,23 +122,23 @@ import AnimatedSocialIcon from "./icon";
 #### Colors
 
 ```tsx
-import AnimatedSocialIcon from "./icon";
+import AnimatedSocialIcon from "./animatedSocialIcon";
 
 <div style={{display:"flex", flexDirection:"row", alignItems:"flex-end"}}>
-    <AnimatedSocialIcon brandName="github-alt" width="2em" defaultColor="#b6c3d9" hoverColor="#3391e8" style={{padding: "1em"}}/>
-    <AnimatedSocialIcon brandName="github-alt" width="2em" hoverColor="#e66574" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="github" width="2em" defaultColor="#b6c3d9" hoverColor="#3391e8" style={{padding: "1em"}}/>
+    <AnimatedSocialIcon brandName="github" width="2em" hoverColor="#e66574" style={{padding: "1em"}}/>
 </div>
 
 ```
 #### Animations (Hover!)
 
 ```tsx
-import AnimatedSocialIcon from "./icon";
+import AnimatedSocialIcon from "./animatedSocialIcon";
 
 <div className="grid">
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="linkedin-in"
+            brandName="github"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -82,7 +148,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="github-alt"
+            brandName="linkedin"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -92,7 +158,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="figma"
+            brandName="instagram"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -102,7 +168,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="instagram"
+            brandName="dribbbleAlt"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -112,7 +178,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="facebook"
+            brandName="youtube"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -127,12 +193,12 @@ import AnimatedSocialIcon from "./icon";
 #### Animation Duration
 
 ```tsx
-import AnimatedSocialIcon from "./icon";
+import AnimatedSocialIcon from "./animatedSocialIcon";
 
 <div className="grid">
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="github-alt"
+            brandName="github"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -143,7 +209,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="github-alt"
+            brandName="github"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -154,7 +220,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="github-alt"
+            brandName="github"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 
@@ -165,7 +231,7 @@ import AnimatedSocialIcon from "./icon";
     </div>
     <div className="item-wrapper">
         <AnimatedSocialIcon 
-            brandName="github-alt"
+            brandName="github"
             width="2em" 
             url="https://github.com/meko-deng/react-animated-social-icons"
             defaultColor="#D1D1D1" 

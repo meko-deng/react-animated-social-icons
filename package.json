@@ -6,15 +6,17 @@
   "module": "lib/index.es.js",
   "browser": "lib/index.umd.js",
   "types": "lib/types/index.d.ts",
-  "files": ["/lib"],
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "test": "jest",
     "start": "styleguidist server",
     "build": "tsc --outDir lib --declarationDir lib/types --declaration true && rollup -c",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.js\" && tslint --fix -p .",
     "lint": "tslint -p .",
-    "prepublishOnly" : "rm -rf lib && npm run format && npm test && npm run build",
-    "preversion" : "npm run format",
+    "prepublishOnly": "rm -rf lib && npm run format && npm test && npm run build",
+    "preversion": "npm run format",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
   },
   "keywords": [],
@@ -24,11 +26,7 @@
     "@emotion/core": "^10.x",
     "@emotion/styled": "^10.x",
     "react": "^16.x",
-    "react-dom": "^16.x",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11"
+    "react-dom": "^16.x"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
@@ -39,8 +37,10 @@
     "@emotion/styled": "^10.0.27",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-typescript": "^5.0.2",
+    "@svgr/webpack": "^5.4.0",
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^10.4.5",
     "@types/jest": "^26.0.4",
