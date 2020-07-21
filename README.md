@@ -33,7 +33,7 @@ import {AnimatedSocialIcon} from 'react-animated-social-icons'
 
 ## Documentation
 
-For a full list of functionalities, check out the [Documentation]()
+For a full list of functionalities, check out the [Documentation](https://meko-deng.github.io/react-animated-social-icons/)
 
 
 ## :writing_hand: Want to Contribute?
