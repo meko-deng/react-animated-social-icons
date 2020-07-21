@@ -1,7 +1,7 @@
 {
   "name": "react-animated-social-icons",
-  "version": "1.0.2",
-  "description": "A minimalistic animation library of svg icons to redirect users to your social webpages",
+  "version": "1.0.3",
+  "description": "Minimalistic animation library of svg icons to redirect users to your social webpages",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "browser": "lib/index.umd.js",
@@ -20,8 +20,16 @@
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "docs:build": "styleguidist build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["icon", "react-icon","svg-icon", "svg", "animation", "hover", "react-svg"],
+  "author": "Meko Deng <deng.meko@gmail.com> (https://mekodeng.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meko-deng/react-animated-social-icons"
+  },
+  "bugs": {
+    "url": "https://github.com/meko-deng/react-animated-social-icons/issues"
+  },
+  "homepage": "https://github.com/meko-deng/react-animated-social-icons#readme",
   "license": "ISC",
   "peerDependencies": {
     "@emotion/core": "^10.x",

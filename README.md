@@ -7,14 +7,18 @@ Icons made by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) fr
 
 ## :page_with_curl: Download/Install
 
-npm
-
 ```sh
 $ npm install react-animated-social-icons --save
 ```
 
+This package has @emotion as a peer dependency. Make sure to install them if you don't have them already.
+
+```sh
+$ npm install @emotion/core @emotion/styled --save-dev
+```
+
 ## :+1: Usage
-Customize your icon interactions with the `animation` prop
+Customize your icon interactions with the `animation` prop.
 
 ```tsx
 import {AnimatedSocialIcon} from 'react-animated-social-icons'
@@ -30,6 +34,7 @@ import {AnimatedSocialIcon} from 'react-animated-social-icons'
     style={{padding: '5em'}}
     />
 ```
+[Live Demo](https://meko-deng.github.io/react-animated-social-icons/)
 
 ## Documentation
 

@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react"
 import React from "react"
-import {AnimatedSocialIcon} from "./animatedSocialIcon"
+import { AnimatedSocialIcon } from "./animatedSocialIcon"
 
 describe("AnimatedSocialIcon", () => {
   it("renders without crashing", () => {
