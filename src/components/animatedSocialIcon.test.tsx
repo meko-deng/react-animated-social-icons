@@ -10,7 +10,7 @@ describe("AnimatedSocialIcon", () => {
   it("renders with default values", () => {
     const { container } = render(<AnimatedSocialIcon brandName="github" />)
     const component = container.firstChild
-    expect(component).toHaveAttribute("width", "inherit")
+    expect(component).toHaveAttribute("width", "1em")
     expect(component).toHaveAttribute("target", "_blank")
   })
 })
