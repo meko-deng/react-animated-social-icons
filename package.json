@@ -1,7 +1,7 @@
 {
   "name": "react-animated-social-icons",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimalistic animation library of svg icons to redirect users to your social webpages",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "browser": "lib/index.umd.js",
@@ -17,7 +17,8 @@
     "lint": "tslint -p .",
     "prepublishOnly": "rm -rf lib && npm run format && npm test && npm run build",
     "preversion": "npm run format",
-    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "docs:build": "styleguidist build"
   },
   "keywords": [],
   "author": "",

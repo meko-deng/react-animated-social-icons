@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   ignore: ["src/components/*.props.ts","src/components/*.test.tsx"],
   showSidebar: false,
@@ -27,6 +29,10 @@ module.exports = {
   },
   propsParser: require("react-docgen-typescript").withCustomConfig(
     "./tsconfig.json"
-    // [parserOptions]
   ).parse,
+  title: "React Animated Social Icons",
+  styleguideDir: "dist-docs",
+  moduleAliases: {
+    "react-animated-social-icons": path.resolve(__dirname, "src")
+  }
 }

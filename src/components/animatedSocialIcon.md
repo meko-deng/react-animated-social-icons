@@ -33,7 +33,7 @@
 #### Icons
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 const Icon = (name) => {
     return (
@@ -92,7 +92,7 @@ const Icon = (name) => {
 #### Default
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 <div style={{display:"flex", flexDirection:"row"}}>
     <AnimatedSocialIcon brandName="github" style={{padding: "0.5em"}}/>
@@ -107,7 +107,7 @@ import AnimatedSocialIcon from "./animatedSocialIcon";
 #### Sizes
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 <div style={{display:"flex", flexDirection:"row", alignItems:"flex-end"}}>
     <AnimatedSocialIcon brandName="github" style={{padding: "1em"}}/>
@@ -122,7 +122,7 @@ import AnimatedSocialIcon from "./animatedSocialIcon";
 #### Colors
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 <div style={{display:"flex", flexDirection:"row", alignItems:"flex-end"}}>
     <AnimatedSocialIcon brandName="github" width="2em" defaultColor="#b6c3d9" hoverColor="#3391e8" style={{padding: "1em"}}/>
@@ -134,7 +134,7 @@ import AnimatedSocialIcon from "./animatedSocialIcon";
 #### Animations (Hover!)
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 <div className="grid">
     <div className="item-wrapper">
@@ -194,7 +194,7 @@ import AnimatedSocialIcon from "./animatedSocialIcon";
 #### Animation Duration
 
 ```tsx
-import AnimatedSocialIcon from "./animatedSocialIcon";
+import {AnimatedSocialIcon} from 'react-animated-social-icons';
 
 <div className="grid">
     <div className="item-wrapper">
