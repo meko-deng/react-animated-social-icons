@@ -10,7 +10,7 @@ export interface AnimatedSocialIconProps {
   url?: string
   /** When `true`, opens link in a new window*/
   newPage?: boolean
-  /** size of icon. By default, inherits the parent font-size */
+  /** size of icon. Font size by default */
   width?: string
   /** animations */
   animation?: AnimationTypes

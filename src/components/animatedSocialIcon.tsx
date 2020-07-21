@@ -8,9 +8,10 @@ interface AnimatedSocialIconWrapperProps extends Partial<AnimatedSocialIconProps
 
 const AnimatedSocialIconWrapper = styled.a<AnimatedSocialIconWrapperProps>`
   width: ${(props) => props.width};
+  padding: 1em;
   cursor: pointer;
   svg {
-    // font-size: ${(props) => props.width};
+    width: inherit;
     color: ${(props) => props.defaultColor};
     :hover {
       animation: ${(props) => props.animation} ${(props) => `${props.animationDuration}s`} forwards

@@ -130,6 +130,7 @@ import AnimatedSocialIcon from "./animatedSocialIcon";
 </div>
 
 ```
+
 #### Animations (Hover!)
 
 ```tsx

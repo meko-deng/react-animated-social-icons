@@ -4,7 +4,8 @@ import typescript from "@rollup/plugin-typescript"
 import resolve from "@rollup/plugin-node-resolve"
 import external from "rollup-plugin-peer-deps-external"
 import {terser} from 'rollup-plugin-terser'
-import image from '@rollup/plugin-image'
+import svgr from '@svgr/rollup'
+import copy from 'rollup-plugin-copy'
 
 import packageJSON from "./package.json"
 const input = "./src/index.ts"
@@ -89,8 +90,11 @@ export default [
             typescript: require("typescript"),
           }),
           terser(),
-          image({
-            include: "./src/icons/*.svg"
+          svgr(),
+          copy({
+            targets: [
+              {src:'src/icons/*.svg', dest:'lib/icons'}
+            ]
           })
     ]
   },

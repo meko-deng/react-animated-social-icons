@@ -25,7 +25,9 @@ import {AnimatedSocialIcon} from 'react-animated-social-icons'
     defaultColor="#D1D1D1"
     hoverColor="black"
     width="2em"
-    animationDuration={0.8}/>
+    animationDuration={0.8}
+    style={{padding: '5em'}}
+    />
 ```
 
 ## Documentation
