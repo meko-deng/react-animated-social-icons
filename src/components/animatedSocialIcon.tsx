@@ -52,5 +52,3 @@ export const AnimatedSocialIcon: React.FunctionComponent<AnimatedSocialIconProps
     </AnimatedSocialIconWrapper>
   )
 }
-
-export default AnimatedSocialIcon

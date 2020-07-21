@@ -1,3 +1,3 @@
-import * as React from 'react'
-export default 'div'
-export const ReactComponent = 'div'
+import * as React from "react"
+export default "div"
+export const ReactComponent = "div"

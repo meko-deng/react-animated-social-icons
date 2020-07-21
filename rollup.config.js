@@ -54,27 +54,24 @@ export default [
     input,
     output: [
       {
-        file: minifyExtension(packageJSON.main),
+        file: packageJSON.main,
         format: "cjs",
         sourcemap: true,
       },
       {
-        file: minifyExtension(packageJSON.module),
+        file: packageJSON.module,
         format: "es",
         exports: "named",
         sourcemap: true
       },
       {
-        file: minifyExtension(packageJSON.browser),
+        file: packageJSON.browser,
         format: "umd",
         name: "reactAnimatedSocialIcons",
         globals: {
             react: "React",
             "@emotion/styled": "styled",
             "@emotion/core": "core",
-            "@fortawesome/react-fontawesome": 'reactFontawesome',
-            "@fortawesome/fontawesome-svg-core": 'fontawesomeSvgCore',
-            "@fortawesome/free-brands-svg-icons": 'freeBrandsSvgIcons'
         },
         sourcemap: true
     }
