@@ -1,4 +1,6 @@
 # React Animated Social Icons
+
+[![Build Status](https://travis-ci.org/meko-deng/react-animated-social-icons.svg?branch=master)](https://travis-ci.org/meko-deng/react-animated-social-icons)
  
 A minimalistic animation library of svg icons to redirect users to your social webpages!
 
