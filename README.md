@@ -7,6 +7,11 @@ A minimalistic animation library of svg icons to redirect users to your social w
 ![icons snapshot](https://i.imgur.com/OzIfqCQ.png)
 Icons made by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) from [www.flaticon.com](https://www.flaticon.com/home)
 
+### ⭐ Update 11/2020
+Two new icons added, tik tok and a generic web icon. Thank you for the suggestions!
+
+![new_icons](https://i.imgur.com/hxbMgOu.png)
+
 ## :page_with_curl: Download/Install
 
 ```sh
