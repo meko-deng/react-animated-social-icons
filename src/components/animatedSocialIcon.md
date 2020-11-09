@@ -77,6 +77,7 @@ const Icon = (name) => {
     {Icon("spotify")}
     {Icon("stackOverflow")}
     {Icon("steam")}
+    {Icon("tiktok")}
     {Icon("tumblr")}
     {Icon("twitch")}
     {Icon("twitter")}
@@ -84,6 +85,7 @@ const Icon = (name) => {
     {Icon("vimeo")}
     {Icon("weibo")}
     {Icon("wordpress")}
+    {Icon("www")}
     {Icon("yelp")}
     {Icon("youtube")}
 </div>

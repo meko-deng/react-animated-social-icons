@@ -1,6 +1,6 @@
 {
   "name": "react-animated-social-icons",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Minimalistic animation library of svg icons to redirect users to your social webpages",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
