@@ -32,6 +32,7 @@ import Soundcloud from "../icons/soundcloud.svg"
 import Spotify from "../icons/spotify.svg"
 import StackOverflow from "../icons/stack-overflow.svg"
 import Steam from "../icons/steam.svg"
+import TikTok from "../icons/tik-tok.svg"
 import Tumblr from "../icons/tumblr.svg"
 import Twitch from "../icons/twitch.svg"
 import Twitter from "../icons/twitter.svg"
@@ -39,6 +40,7 @@ import TwitterAlt from "../icons/twitter-alt.svg"
 import Vimeo from "../icons/vimeo.svg"
 import Weibo from "../icons/weibo.svg"
 import Wordpress from "../icons/wordpress.svg"
+import WWW from "../icons/www.svg"
 import Yelp from "../icons/yelp.svg"
 import Youtube from "../icons/youtube.svg"
 
@@ -76,6 +78,7 @@ export const icons = {
   spotify: <Spotify />,
   stackOverflow: <StackOverflow />,
   steam: <Steam />,
+  tiktok: <TikTok />,
   tumblr: <Tumblr />,
   twitch: <Twitch />,
   twitter: <Twitter />,
@@ -83,6 +86,7 @@ export const icons = {
   vimeo: <Vimeo />,
   weibo: <Weibo />,
   wordpress: <Wordpress />,
+  www: <WWW />,
   yelp: <Yelp />,
   youtube: <Youtube />,
 }
